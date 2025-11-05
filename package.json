@@ -1,0 +1,34 @@
+{
+  "name": "bitres-deploy",
+  "version": "1.0.0",
+  "description": "AWS Cognito with Lambda triggers and callback integration",
+  "main": "bin/app.js",
+  "scripts": {
+    "cdk:bootstrap": "cdk bootstrap",
+    "cdk:synth": "cdk synth",
+    "cdk:deploy:all": "cdk deploy --all --require-approval never",
+    "cdk:destroy:all": "cdk destroy --all",
+
+    "cdk:diff:Main": "cdk diff CognitoLambdaStack",
+    "cdk:deploy:Main": "cdk deploy CognitoLambdaStack --require-approval never",
+    "cdk:destroy:Main": "cdk destroy CognitoLambdaStack",
+
+    "cdk:diff:ApiDoc": "cdk diff ApiDocStack",
+    "cdk:deploy:ApiDoc": "cdk deploy ApiDocStack --require-approval never",
+    "cdk:destroy:ApiDoc": "cdk destroy ApiDocStack"
+  },
+  "keywords": [
+    "aws",
+    "cdk",
+    "cognito",
+    "lambda"
+  ],
+  "private": true,
+  "dependencies": {
+    "dotenv": "^17.2.3"
+  },
+  "devDependencies": {
+    "aws-cdk-lib": "^2.220.0",
+    "constructs": "^10.4.2"
+  }
+}

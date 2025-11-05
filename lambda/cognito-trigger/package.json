@@ -1,0 +1,11 @@
+{
+  "name": "cognito-trigger-lambda",
+  "version": "1.0.1",
+  "description": "Lambda function for Cognito triggers",
+  "main": "index.js",
+  "private": true,
+  "dependencies": {
+    "@aws-sdk/client-cognito-identity-provider": "^3.0.0",
+    "axios": "^1.13.1"
+  }
+}
